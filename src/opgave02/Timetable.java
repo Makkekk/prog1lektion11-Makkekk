@@ -13,8 +13,13 @@ public class Timetable {
 
     private static void printDepartures(Departure[] departures) {
         // TODO: Write your code here
-        for (int i = 0; i < departures.length; i++) {
-            System.out.println(departures[i].perron + " " + departures[i].destination + " " + departures[i].arrival + " " + departures[i].departure);
+
+        //Header
+        System.out.printf("%-10s %-20s %-10s %-10s\n", "Perron", "Destination", "Departure", "Arrival");
+        System.out.println("________________________________________________________________");
+        for (Departure departure : departures) {
+            System.out.printf("%-10d %-20s %-10s %-10s\n",
+                    departure.perron, departure.destination, departure.departure, departure.arrival);
         }
     }
 

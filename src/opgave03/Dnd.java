@@ -5,8 +5,8 @@ import com.sun.tools.javac.Main;
 public class Dnd {
     public static void main(String[] args) {
 
-        Hero hero = new Hero(100, 20, 20, "Gregors", "superhuman", "Plastickrus");
-        Monster Monster = new Monster (300,30, 5,"Ham nede fra kiosken", "Kast med arm", "Stor");
+        Hero hero = new Hero(100, 20, 20, "Gregors", "his", "Plastickrus");
+        Monster Monster = new Monster (300,30, 5,"Hr. Pys", "Throw his arm", "Stor");
         fight(hero,Monster);
     }
 
