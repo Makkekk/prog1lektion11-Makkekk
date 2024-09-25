@@ -1,5 +1,10 @@
 package opgave02;
 
+import opgave01.book;
+
+import javax.print.attribute.standard.Destination;
+import java.beans.DesignMode;
+
 public class Timetable {
     public static void main(String[] args) {
         Departure[] departures = getDepartures();
@@ -8,10 +13,13 @@ public class Timetable {
 
     private static void printDepartures(Departure[] departures) {
         // TODO: Write your code here
+        for (int i = 0; i < departures.length; i++) {
+            System.out.println(departures[i].perron + " " + departures[i].destination + " " + departures[i].arrival + " " + departures[i].departure);
+        }
     }
 
     private static Departure[] getDepartures() {
-        Departure[] departures = new Departure[10];
+        Departure[] departures = new Departure[8];
         departures[0] = new Departure(1, "København H", "07:57", "08:04");
         departures[1] = new Departure(2, "Aalborg", "08:03", "08:10");
         departures[2] = new Departure(1, "København H", "08:32", "08:40");
